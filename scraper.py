@@ -1,0 +1,17 @@
+import requests
+import re
+import json
+
+URL = 'http://www.nytimes.com/crosswords/game/mini?page=mini&type=mini&date=&_r=02'
+
+s = requests.session()
+s.headers= {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:53.0) Gecko/20100101 Firefox/53.0'}
+
+response = s.get(URL)
+
+print re.search( r"window.preload = '(.*?)';", response.text)
+searched = re.search( r"window.preload = '(.*?)';", response.text).group(1)
+decoded = searched.decode("base64")
+
+data = json.loads( decoded)
+print json.dumps( data, indent = 4, sort_keys = True)
