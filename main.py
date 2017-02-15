@@ -1,3 +1,10 @@
+import sys, os
+
+# get this file's directory independent of where it's run from
+here = os.path.dirname(os.path.realpath(__file__))
+sys.path.append(os.path.join(here, "../"))
+sys.path.append(os.path.join(here, "../vendored"))
+
 from scraper import scrape
 from pymongo import MongoClient
 import datetime
