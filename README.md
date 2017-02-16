@@ -1,6 +1,6 @@
 # nyt-puzzle-scraper
 
-Scraper NY Times Mini Crosswords puzzle everyday through AWS Lambda & its cron.
+Scrapes NY Times Mini Crosswords puzzle everyday through AWS Lambda & its cron.
 
 ### Setup & Deployment
 
