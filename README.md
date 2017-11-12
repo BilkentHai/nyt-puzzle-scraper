@@ -10,3 +10,6 @@ Scrapes NY Times Mini Crosswords puzzle everyday through AWS Lambda & its cron.
 
 
 Note: DB & collection names can be changed on main.py.
+
+### Credits
+* PythEch(https://github.com/PythEch) and BilkentHai group(https://github.com/BilkentHai/).
