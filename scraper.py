@@ -3,7 +3,9 @@ import re
 import json
 import base64
 
-
+# Written by Hakan Türkmenoglu.
+# https://github.com/PythEch
+# https://turkmenog.lu/
 def scrape():
     URL = 'http://www.nytimes.com/crosswords/game/mini?page=mini&type=mini&date=&_r=02'
 
